@@ -33,7 +33,7 @@ import VSLPlayer from './components/VSLPlayer';
 // Import local generated images
 import avatarProfessora from './assets/images/avatar_professora_1780095735123.webp';
 import mockupBasico from './assets/images/mockup_basico_1780095756056.webp';
-import mockupPremium from './assets/images/mockup_premium_1780095770029.webp';
+import mockupPremium from './assets/images/mockup_premium_new.jpg';
 import seloGarantia from './assets/images/selo_garantia_7_dias_new_1780574161008.png';
 
 const flagColors = ['#e74c3c', '#f1c40f', '#3498db', '#2ecc71', '#e67e22', '#9b59b6'];
