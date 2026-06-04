@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 
-export default function VSLPlayer() {
-  const iframeRef = useRef<HTMLIFrameElement>(null);
+function VSLPlayerComponent() {
+  const [iframeSrc, setIframeSrc] = useState<string>('');
 
   useEffect(() => {
     // Injeta o script SDK da converteai se ainda não estiver presente na página
@@ -15,28 +15,32 @@ export default function VSLPlayer() {
     }
 
     // Define o source correto do iframe no momento de montagem
-    if (iframeRef.current) {
-      const params = window.location.search || '';
-      const pageUrl = window.location.href;
-      iframeRef.current.src = `https://scripts.converteai.net/9f55019d-ac16-4a56-97cc-39f5fa062cae/players/6a217043b3dbc4620bde9aff/v4/embed.html${params}${params ? '&' : '?'}vl=${encodeURIComponent(pageUrl)}`;
-    }
+    const params = window.location.search || '';
+    const pageUrl = window.location.href;
+    const url = `https://scripts.converteai.net/9f55019d-ac16-4a56-97cc-39f5fa062cae/players/6a217043b3dbc4620bde9aff/v4/embed.html${params}${params ? '&' : '?'}vl=${encodeURIComponent(pageUrl)}`;
+    setIframeSrc(url);
   }, []);
 
   return (
     <div className="relative w-full max-w-[360px] mx-auto rounded-[2rem] overflow-hidden shadow-[0_25px_80px_-20px_rgba(231,76,60,0.3)] border-[5px] sm:border-[6px] border-[#f1c40f] bg-black">
       {/* Container fluido com o aspect-ratio exato (9:16 vertical) */}
       <div className="relative w-full aspect-[9/16] bg-neutral-950 overflow-hidden">
-        <iframe
-          ref={iframeRef}
-          id="ifr_6a217043b3dbc4620bde9aff"
-          title="Apresentação VSL"
-          frameBorder="0"
-          allowFullScreen
-          src="about:blank"
-          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-          referrerPolicy="origin"
-        />
+        {iframeSrc && (
+          <iframe
+            id="ifr_6a217043b3dbc4620bde9aff"
+            title="Apresentação VSL"
+            frameBorder="0"
+            allowFullScreen
+            src={iframeSrc}
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            referrerPolicy="origin"
+          />
+        )}
       </div>
     </div>
   );
 }
+
+const VSLPlayer = memo(VSLPlayerComponent);
+export default VSLPlayer;
+
