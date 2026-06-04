@@ -211,6 +211,21 @@ export default function App() {
         </div>
       </section>
 
+      {/* Call to Action Section */}
+      <section className="relative z-10 py-8 px-4 text-center bg-white">
+        <div className="max-w-2xl mx-auto">
+          <a 
+            href="#oferta" 
+            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E9B21C] to-[#d49f13] text-neutral-950 text-lg sm:text-xl font-black px-10 py-5 rounded-full shadow-2xl hover:from-[#d49f13] hover:to-[#b58509] transition-all hover:scale-[1.02] ring-4 ring-[#E9B21C]/40 font-display animate-pulse-cta"
+          >
+            ACESSAR MATERIAIS
+          </a>
+          <p className="mt-3 text-xs text-[#5d4037] font-semibold">
+            Evite sofrer com a pressa de última hora. Tenha toda a solução e tranquilidade em menos de 1 minuto.
+          </p>
+        </div>
+      </section>
+
       {/* 3. Pain-Points Section (Seção de Dores) */}
       <section className="relative z-10 py-16 md:py-20 px-4 bg-white border-y border-amber-100">
         <div className="max-w-3xl mx-auto space-y-8">
@@ -410,15 +425,7 @@ export default function App() {
             </p>
           </div>
 
-          <a 
-            href="#oferta" 
-            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E9B21C] to-[#d49f13] text-neutral-950 text-lg sm:text-xl font-black px-10 py-5 rounded-full shadow-2xl hover:from-[#d49f13] hover:to-[#b58509] transition-all hover:scale-[1.02] ring-4 ring-[#E9B21C]/40 font-display animate-pulse-cta"
-          >
-            ACESSAR MATERIAIS
-          </a>
-          <p className="mt-3 text-xs text-white/60 font-semibold">
-            Evite sofrer com a pressa de última hora. Tenha toda a solução e tranquilidade em menos de 1 minuto.
-          </p>
+
         </div>
       </section>
 
