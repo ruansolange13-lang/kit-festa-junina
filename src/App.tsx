@@ -31,9 +31,9 @@ import UpsellModal from './components/UpsellModal';
 import VSLPlayer from './components/VSLPlayer';
 
 // Import local generated images
-import avatarProfessora from './assets/images/avatar_professora_1780095735123.webp';
+import avatarProfessora from './assets/images/avatar_professora_nova.jpg';
 import mockupPremium from './assets/images/mockup_premium_new.jpg';
-import seloGarantia from './assets/images/selo_garantia_7_dias_new_1780574161008.png';
+import seloGarantia from './assets/images/selo_garantia_7_dias_novo.png';
 
 const flagColors = ['#e74c3c', '#f1c40f', '#3498db', '#2ecc71', '#e67e22', '#9b59b6'];
 
@@ -456,10 +456,10 @@ export default function App() {
               alt="Selo de 7 Dias de Garantia Incondicional" 
               loading="lazy"
               decoding="async"
-              width={160}
-              height={160}
+              width={240}
+              height={240}
               referrerPolicy="no-referrer"
-              className="w-36 h-36 sm:w-40 sm:h-40 object-contain hover:scale-105 transition-transform duration-300 drop-shadow-xl"
+              className="w-48 h-48 sm:w-60 sm:h-60 object-contain hover:scale-105 transition-transform duration-300 drop-shadow-2xl"
             />
           </div>
         </div>
