@@ -23,19 +23,14 @@ import {
   Scissors,
   PartyPopper
 } from 'lucide-react';
-import { ActivityImage, PricingPlan } from './types';
+import { PricingPlan } from './types';
 
 import FAQAccordion from './components/FAQAccordion';
 import PlanCard from './components/PlanCard';
-import ImageLightbox from './components/ImageLightbox';
 import UpsellModal from './components/UpsellModal';
 import VSLPlayer from './components/VSLPlayer';
 
 // Import local generated images
-import heroKit from './assets/images/hero_kit_1780095661288.webp';
-import previewPainel from './assets/images/preview_painel_1780095686806.webp';
-import previewPescaria from './assets/images/preview_pescaria_1780095702339.webp';
-import previewCesta from './assets/images/preview_cesta_1780095718855.webp';
 import avatarProfessora from './assets/images/avatar_professora_1780095735123.webp';
 import mockupBasico from './assets/images/mockup_basico_1780095756056.webp';
 import mockupPremium from './assets/images/mockup_premium_1780095770029.webp';
@@ -52,7 +47,6 @@ const testimonialImages = [
 ];
 
 export default function App() {
-  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [formattedDate, setFormattedDate] = useState<string>('');
   const [isUpsellOpen, setIsUpsellOpen] = useState(false);
 
@@ -74,45 +68,6 @@ export default function App() {
     formatted = formatted.charAt(0).toUpperCase() + formatted.slice(1);
     setFormattedDate(formatted);
   }, []);
-
-  const activityImages: ActivityImage[] = [
-    {
-      id: 'hero',
-      title: 'Kit Completo Arraiá Premiado',
-      description: 'Estrutura completa com tudo o que você precisa para garantir a alegria, a risada e a organização perfeita sem esforço mental.',
-      src: heroKit,
-    },
-    {
-      id: 'painel',
-      title: 'Painel Premiado Prático',
-      description: 'O centro interativo que engaja as crianças com curiosidade, mimos ocultos, tarefas temáticas e charadas divertidas.',
-      src: previewPainel,
-    },
-    {
-      id: 'pescaria',
-      title: 'Barraquinha de Jogo da Pescaria',
-      description: 'O método de gincana perfeito para prender o interesse dos convidados, marcando pontos de forma super carismática e descontraída.',
-      src: previewPescaria,
-    },
-    {
-      id: 'cesta',
-      title: 'Mini Cesta Caipira 3D',
-      description: 'O toque acolhedor de puro afeto para lembrancinhas e guloseimas que encanta e emociona de primeira cada convidado da festa.',
-      src: previewCesta,
-    },
-    {
-      id: 'basico',
-      title: 'Visual do Plano Essencial',
-      description: 'As dinâmicas chaves e brincadeiras que salvam a sua semana e evitam o stress do improviso de última hora.',
-      src: mockupBasico,
-    },
-    {
-      id: 'premium',
-      title: 'Visual do Plano Completo',
-      description: 'A solução definitiva para o seu São João: 17 dinâmicas prontas, decoração de extremo bom gosto e bônus que garantem elogios e poupam seu sono.',
-      src: mockupPremium,
-    }
-  ];
 
   const pricingPlans: PricingPlan[] = [
     {
@@ -467,61 +422,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* 7. Gallery / Visual Portfolio Section with Lightbox */}
-      <section className="relative z-10 py-16 md:py-24 px-4 bg-white">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-black text-[#d35400] mb-3 tracking-tight font-display">
-            Veja como tudo fica lindo impresso e montado 😍
-          </h2>
-          <p className="text-[#5d4037] font-semibold max-w-2xl mx-auto md:text-lg">
-            Imagens ilustrativas de representação dos moldes e dinâmicas prontas. <strong className="text-[#d35400]">Clique nas fotos abaixo do carrossel para ampliar os detalhes e conferir:</strong>
-          </p>
-        </div>
 
-        {/* Portfolio Gallery Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
-          {activityImages.map((img, idx) => (
-            <div 
-              key={img.id}
-              onClick={() => setLightboxIndex(idx)}
-              className="group relative overflow-hidden rounded-3xl bg-white shadow-[0_10px_30px_-15px_rgba(0,0,0,0.25)] hover:shadow-[0_25px_60px_-20px_rgba(231,126,34,0.45)] transition-all duration-500 border border-white ring-1 ring-amber-100 hover:-translate-y-1 cursor-pointer"
-            >
-              <div className="aspect-[4/3] overflow-hidden bg-[#e5d7af] relative">
-                <img 
-                  src={img.src} 
-                  alt={img.title} 
-                  loading="lazy" 
-                  decoding="async"
-                  width={400}
-                  height={300}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                
-                {/* Visual Cover Sheet */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-45 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              
-              <div className="absolute bottom-0 left-0 right-0 p-5 transform translate-y-1.5 group-hover:translate-y-0 transition-transform duration-300">
-                <span className="inline-block bg-[#f1c40f] text-[#2d1e15] text-[10px] font-black px-2.5 py-0.5 rounded-full mb-1 uppercase tracking-wider font-display">
-                  TOQUE PARA DETALHAR 🔍
-                </span>
-                <h4 className="text-white font-extrabold text-base tracking-tight drop-shadow font-display leading-tight">
-                  {img.title}
-                </h4>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Render Lightbox Overlay Modal */}
-        <ImageLightbox 
-          images={activityImages}
-          currentIndex={lightboxIndex}
-          onClose={() => setLightboxIndex(null)}
-          onNavigate={(index) => setLightboxIndex(index)}
-        />
-      </section>
 
       {/* 12. Pricing Offer Block (Seção Escolha seu plano com anchor links) */}
       <section id="oferta" className="relative z-10 py-16 md:py-24 px-4 bg-gradient-to-b from-[#e5d7af] to-[#d6bb89] border-t border-amber-200/50">
