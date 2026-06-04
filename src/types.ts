@@ -21,7 +21,7 @@ export interface PricingPlan {
   name: string;
   tagline: string;
   badge?: string;
-  mockupSrc: string;
+  mockupSrc?: string;
   regularPrice: string;
   currentPrice: string;
   paymentDetails: string;

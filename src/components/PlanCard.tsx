@@ -33,20 +33,22 @@ export default function PlanCard({ plan, onBasicClick }: PlanCardProps) {
       </p>
 
       {/* Mockup image */}
-      <div className="relative mb-6 select-none flex justify-center">
-        <img 
-          src={plan.mockupSrc} 
-          alt={plan.name} 
-          loading="lazy"
-          decoding="async"
-          width={plan.isPopular ? 240 : 208}
-          height={plan.isPopular ? 208 : 176}
-          referrerPolicy="no-referrer"
-          className={`mx-auto drop-shadow-xl transition-transform duration-500 hover:scale-[1.04] object-contain ${
-            plan.isPopular ? 'w-48 sm:w-56 md:w-60 h-44 sm:h-52' : 'w-40 sm:w-48 md:w-52 h-36 sm:h-44'
-          }`}
-        />
-      </div>
+      {plan.mockupSrc && (
+        <div className="relative mb-6 select-none flex justify-center">
+          <img 
+            src={plan.mockupSrc} 
+            alt={plan.name} 
+            loading="lazy"
+            decoding="async"
+            width={plan.isPopular ? 240 : 208}
+            height={plan.isPopular ? 208 : 176}
+            referrerPolicy="no-referrer"
+            className={`mx-auto drop-shadow-xl transition-transform duration-500 hover:scale-[1.04] object-contain ${
+              plan.isPopular ? 'w-48 sm:w-56 md:w-60 h-44 sm:h-52' : 'w-40 sm:w-48 md:w-52 h-36 sm:h-44'
+            }`}
+          />
+        </div>
+      )}
 
       {/* Pricing label */}
       <div className="mb-1.5 text-sm text-[#5d4037] font-semibold">

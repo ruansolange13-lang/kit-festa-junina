@@ -32,7 +32,6 @@ import VSLPlayer from './components/VSLPlayer';
 
 // Import local generated images
 import avatarProfessora from './assets/images/avatar_professora_1780095735123.webp';
-import mockupBasico from './assets/images/mockup_basico_1780095756056.webp';
 import mockupPremium from './assets/images/mockup_premium_new.jpg';
 import seloGarantia from './assets/images/selo_garantia_7_dias_new_1780574161008.png';
 
@@ -98,7 +97,6 @@ export default function App() {
       id: 'basico',
       name: 'Kit Arraiá Básico',
       tagline: 'O essencial para as brincadeiras fundamentais com total organização.',
-      mockupSrc: mockupBasico,
       regularPrice: 'De R$ 47,90',
       currentPrice: '10,00',
       paymentDetails: 'somente à vista no Pix',
