@@ -167,9 +167,39 @@ export default function App() {
             Sua Festa Junina <span className="text-[#1b4332] underline decoration-[#f1c40f] decoration-4">completa e super organizada</span> em poucos minutos
           </h1>
           
-          <p className="text-sm sm:text-base md:text-lg text-[#5d4037] max-w-3xl mx-auto leading-relaxed mb-8 font-semibold">
+          <p className="text-sm sm:text-base md:text-lg text-[#5d4037] max-w-3xl mx-auto leading-relaxed mb-4 font-semibold">
             Receba um kit completo com tudo pronto para baixar, imprimir e utilizar hoje mesmo <span className="text-[#1e3a8a] font-black">+BONUS</span>
           </p>
+
+          {/* Checklist below sub-headline */}
+          <div className="max-w-2xl mx-auto my-6 px-5 py-5 bg-[#ebdcb9] border-2 border-amber-900/10 rounded-3xl text-left shadow-sm">
+            <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[#2d1e15] font-semibold text-sm sm:text-base leading-snug">
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-600 shrink-0">✅</span>
+                <span>Mais de 70 materiais exclusivos inclusos</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-600 shrink-0">✅</span>
+                <span>Brincadeiras e dinâmicas prontas para animar sua festa</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-600 shrink-0">✅</span>
+                <span>Bingo Junino, Pescaria, Correio Elegante e Gincanas</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-600 shrink-0">✅</span>
+                <span>Cartazes, painéis e materiais decorativos exclusivos</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-600 shrink-0">✅</span>
+                <span>Kit organizado, pronto para imprimir</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-emerald-600 shrink-0">✅</span>
+                <span>Acesso imediato após a compra</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Optimized Video Block (VSL vertical story style) */}
@@ -504,23 +534,268 @@ export default function App() {
 
 
 
-      {/* 12. Pricing Offer Block (Seção Escolha seu plano com anchor links) */}
+      {/* 11. Exclusive Bonuses Section */}
+      <section className="relative z-10 py-16 md:py-24 px-4 bg-white border-t border-neutral-100">
+        <div className="max-w-6xl mx-auto">
+          
+          <div className="text-center mb-14">
+            <span className="text-4xl sm:text-5xl mb-4 block select-none">🎁</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4.5xl font-black text-[#d35400] mb-4 tracking-tight font-display uppercase leading-tight max-w-4xl mx-auto">
+              E ISSO NÃO É TUDO... AO ADQUIRIR O KIT ARRAIÁ PREMIUM, VOCÊ RECEBE 4 BÔNUS EXCLUSIVOS TOTALMENTE GRATUITOS.
+            </h2>
+            <p className="text-[#5d4037] font-semibold md:text-lg max-w-2xl mx-auto mt-2">
+              Materiais extras que ajudam a deixar sua Festa Junina ainda mais divertida, organizada e memorável.
+            </p>
+          </div>
+
+          {/* 4 Bonuses Cards Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            {/* Bonus 1 */}
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center">
+              <div>
+                <span className="inline-block bg-[#e74c3c] text-white text-xs font-extrabold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+                  💌 BÔNUS #1
+                </span>
+                <h3 className="text-base sm:text-lg font-black text-[#2d1e15] mb-3 font-display uppercase tracking-tight">
+                  KIT CORREIO ELEGANTE PREMIUM
+                </h3>
+                <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
+                  Mensagens divertidas e prontas para animar a interação entre os participantes da festa.
+                </p>
+              </div>
+              <div className="mt-5 pt-3 border-t border-[#2d1e15]/10">
+                <p className="text-xs text-[#5d4037]/75 font-bold">Valor percebido:</p>
+                <p className="text-lg font-black text-[#e74c3c] font-display">R$ 19,90</p>
+              </div>
+            </div>
+
+            {/* Bonus 2 */}
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center">
+              <div>
+                <span className="inline-block bg-[#e74c3c] text-white text-xs font-extrabold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+                  📸 BÔNUS #2
+                </span>
+                <h3 className="text-base sm:text-lg font-black text-[#2d1e15] mb-3 font-display uppercase tracking-tight">
+                  KIT PLAQUINHAS E CARTAZES JUNINOS
+                </h3>
+                <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
+                  Modelos criativos para fotos, decoração e momentos especiais durante o evento.
+                </p>
+              </div>
+              <div className="mt-5 pt-3 border-t border-[#2d1e15]/10">
+                <p className="text-xs text-[#5d4037]/75 font-bold">Valor percebido:</p>
+                <p className="text-lg font-black text-[#e74c3c] font-display">R$ 14,90</p>
+              </div>
+            </div>
+
+            {/* Bonus 3 */}
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center">
+              <div>
+                <span className="inline-block bg-[#e74c3c] text-white text-xs font-extrabold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+                  🎯 BÔNUS #3
+                </span>
+                <h3 className="text-base sm:text-lg font-black text-[#2d1e15] mb-3 font-display uppercase tracking-tight">
+                  KIT BINGO JUNINO COMPLETO
+                </h3>
+                <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
+                  Uma das atrações mais tradicionais das Festas Juninas, pronta para utilizar.
+                </p>
+              </div>
+              <div className="mt-5 pt-3 border-t border-[#2d1e15]/10">
+                <p className="text-xs text-[#5d4037]/75 font-bold">Valor percebido:</p>
+                <p className="text-lg font-black text-[#e74c3c] font-display">R$ 24,90</p>
+              </div>
+            </div>
+
+            {/* Bonus 4 */}
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center">
+              <div>
+                <span className="inline-block bg-[#e74c3c] text-white text-xs font-extrabold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+                  🏆 BÔNUS #4
+                </span>
+                <h3 className="text-base sm:text-lg font-black text-[#2d1e15] mb-3 font-display uppercase tracking-tight">
+                  KIT DESAFIOS E GINCANAS JUNINAS
+                </h3>
+                <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
+                  Atividades extras para aumentar a participação e diversão dos convidados.
+                </p>
+              </div>
+              <div className="mt-5 pt-3 border-t border-[#2d1e15]/10">
+                <p className="text-xs text-[#5d4037]/75 font-bold">Valor percebido:</p>
+                <p className="text-lg font-black text-[#e74c3c] font-display">R$ 19,90</p>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Highlight Block */}
+          <div className="mt-12 bg-gradient-to-br from-[#2d1e15] via-[#d35400] to-[#2d1e15] text-white rounded-[2rem] p-6 sm:p-8 text-center border-4 border-[#f1c40f] max-w-4xl mx-auto shadow-2xl animate-pulse-cta">
+            <h4 className="text-xl sm:text-2xl font-black text-[#f1c40f] mb-2 font-display uppercase tracking-wide">
+              🔥 VALOR TOTAL DOS BÔNUS: R$ 79,60
+            </h4>
+            <p className="text-sm sm:text-base font-black text-white uppercase tracking-wider">
+              HOJE VOCÊ RECEBE TUDO ISSO SEM PAGAR NADA A MAIS NO PLANO PREMIUM.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 12. Pricing Offer Block (Comparação de Planos) */}
       <section id="oferta" className="relative z-10 py-16 md:py-24 px-4 bg-gradient-to-b from-[#e5d7af] to-[#d6bb89] border-t border-amber-200/50">
-        <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-4xl font-black text-[#1e3a8a] tracking-tight font-display uppercase">
-            Garanta Agora o Kit Certo para Sua Festa
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-5xl font-black text-[#1e3a8a] tracking-tight font-display uppercase">
+            Escolha o Plano Ideal para Sua Festa
           </h2>
         </div>
 
         {/* Pricing Layout Container - Grid comparison */}
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-start px-2">
-          {pricingPlans.map((plan) => (
-            <PlanCard 
-              key={plan.id} 
-              plan={plan} 
-              onBasicClick={handleBasicClick}
-            />
-          ))}
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-stretch px-2 mb-10">
+          
+          {/* Plano Essencial */}
+          <div className="bg-white rounded-[2rem] p-6 sm:p-8 md:p-10 border-2 border-neutral-200 shadow-xl flex flex-col justify-between text-center relative mt-5">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-black text-[#5d4037] mb-2 font-display uppercase">
+                PLANO ESSENCIAL
+              </h3>
+              <p className="text-xs text-[#5d4037] mb-6 font-semibold uppercase tracking-wider">
+                O essencial para as brincadeiras fundamentais com total organização
+              </p>
+
+              {/* Pricing */}
+              <div className="mb-1 text-sm text-[#5d4037] font-semibold">
+                <span className="line-through opacity-80">De R$ 47,90</span>
+              </div>
+              <div className="flex items-end justify-center gap-1 mb-1">
+                <span className="text-lg font-extrabold text-[#5d4037] mb-1.5 font-display">R$</span>
+                <span className="font-black leading-none tracking-tight font-display text-5xl sm:text-6xl text-[#d35400]">
+                  10,00
+                </span>
+              </div>
+              <p className="text-xs text-[#5d4037] mb-6 font-medium">
+                somente à vista no Pix
+              </p>
+
+              {/* Divider */}
+              <div className="my-6 border-b border-[#f1c40f]/20"></div>
+
+              {/* Features List */}
+              <ul className="text-left text-sm text-[#2d1e15] space-y-3.5 max-w-xs mx-auto mb-8 font-semibold">
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm">Mais de 70 materiais inclusos</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm">Brincadeiras e dinâmicas prontas</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm">Cartazes e painéis exclusivos</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              {/* CTA Button */}
+              <a 
+                href="https://pay.lowify.com.br/checkout?product_id=gpCNrh"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleBasicClick}
+                className="inline-flex items-center justify-center gap-2 w-full font-black text-base sm:text-lg px-6 py-4.5 rounded-full shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer font-display uppercase tracking-wide bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-[0_10px_25px_-5px_rgba(230,126,34,0.3)]"
+              >
+                QUERO O PLANO ESSENCIAL
+              </a>
+              <p className="mt-3 text-[11px] text-[#5d4037] font-bold">
+                ⚡ Acesso imediato após a confirmação do pagamento.
+              </p>
+            </div>
+          </div>
+
+          {/* Plano Premium */}
+          <div className="bg-white rounded-[2rem] p-6 sm:p-8 md:p-10 border-4 border-[#1e3a8a] shadow-[0_30px_80px_-30px_rgba(231,76,60,0.45)] flex flex-col justify-between text-center relative md:-translate-y-2 mt-10 md:mt-0">
+            {/* Badges */}
+            <div className="absolute -top-5 left-1/2 -translate-x-1/2 flex flex-col gap-1 items-center z-10 whitespace-nowrap">
+              <span className="bg-[#e74c3c] text-white px-5 py-2 rounded-full font-extrabold text-xs sm:text-sm shadow-lg ring-4 ring-white animate-pulse font-display tracking-wider">
+                ⭐ MAIS ESCOLHIDO
+              </span>
+              <span className="bg-emerald-600 text-white px-4 py-1.5 rounded-full font-bold text-[10px] sm:text-xs shadow-md ring-2 ring-white tracking-wide">
+                🎁 4 BÔNUS EXCLUSIVOS
+              </span>
+            </div>
+
+            <div className="pt-6">
+              <h3 className="text-xl sm:text-2xl font-black text-[#d35400] mb-2 font-display uppercase">
+                PLANO PREMIUM
+              </h3>
+              <p className="text-xs text-[#5d4037] mb-6 font-semibold uppercase tracking-wider">
+                A solução definitiva para o seu São João + Todos os bônus inclusos
+              </p>
+
+              {/* Pricing */}
+              <div className="mb-1 text-sm text-[#5d4037] font-semibold">
+                <span className="line-through opacity-80">De R$ 97,00</span>
+              </div>
+              <div className="flex items-end justify-center gap-1 mb-1">
+                <span className="text-lg font-extrabold text-[#5d4037] mb-1.5 font-display">R$</span>
+                <span className="font-black leading-none tracking-tight font-display text-6xl sm:text-7xl text-[#e74c3c]">
+                  27,90
+                </span>
+              </div>
+              <p className="text-xs text-[#5d4037] mb-6 font-medium">
+                somente à vista no Pix
+              </p>
+
+              {/* Divider */}
+              <div className="my-6 border-b border-[#f1c40f]/20"></div>
+
+              {/* Features List */}
+              <ul className="text-left text-sm text-[#2d1e15] space-y-3.5 max-w-xs mx-auto mb-8 font-bold">
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm">Tudo do Plano Essencial</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#e74c3c]">Kit Correio Elegante Premium</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#e74c3c]">Kit Plaquinhas e Cartazes Juninos</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#e74c3c]">Kit Bingo Junino Completo</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-[#e74c3c]">Kit Desafios e Gincanas Juninas</span>
+                </li>
+                <li className="flex items-start gap-2.5 leading-snug">
+                  <span className="text-emerald-500 font-extrabold shrink-0">✅</span>
+                  <span className="text-sm text-emerald-600">Todos os bônus inclusos</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              {/* CTA Button */}
+              <a 
+                href="https://pay.lowify.com.br/checkout?product_id=Zk4EhD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full font-black text-base sm:text-lg px-6 py-4.5 rounded-full shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer font-display uppercase tracking-wide bg-gradient-to-r from-[#E9B21C] to-[#d49f13] text-neutral-950 hover:from-[#d49f13] hover:to-[#b58509] shadow-[0_15px_35px_-5px_rgba(233,178,28,0.5)] ring-4 ring-[#E9B21C]/40 animate-pulse-cta"
+              >
+                QUERO O KIT ARRAIÁ PREMIUM
+              </a>
+              <p className="mt-3 text-[11px] text-[#5d4037] font-bold">
+                ⚡ Acesso imediato após a confirmação do pagamento.
+              </p>
+            </div>
+          </div>
+
         </div>
 
         {/* Guarantee Badge Seal */}
