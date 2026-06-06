@@ -121,18 +121,10 @@ export default function App() {
     <div className="relative min-h-screen overflow-hidden bg-[#e5d7af] text-[#2d1e15] font-sans antialiased selection:bg-[#f1c40f]/50 flex flex-col">
       
       {/* Top Special Offer Banner */}
-      <div className="w-full bg-gradient-to-r from-[#2d1e15] via-[#d35400] to-[#2d1e15] text-white py-3.5 px-4 text-center border-b border-[#f1c40f]/30 z-50 relative shadow-md select-none">
-        <div className="max-w-4xl mx-auto flex flex-col gap-1">
-          <p className="font-extrabold text-sm sm:text-base text-[#f1c40f] tracking-wider uppercase flex items-center justify-center gap-1.5">
-            🔥 OFERTA ESPECIAL DE FESTA JUNINA 🔥
-          </p>
-          <p className="font-black text-xs sm:text-sm text-white leading-snug">
-            Garanta agora seu acesso e receba todos os materiais imediatamente.
-          </p>
-          <p className="text-[10px] sm:text-xs text-amber-200/90 font-bold uppercase tracking-wider mt-0.5">
-            ⚠️ Essa condição promocional pode sair do ar a qualquer momento durante o período junino.
-          </p>
-        </div>
+      <div className="w-full bg-gradient-to-r from-[#2d1e15] via-[#d35400] to-[#2d1e15] text-white py-2.5 px-4 text-center border-b border-[#f1c40f]/30 z-50 relative shadow-md select-none">
+        <p className="font-black text-xs sm:text-sm text-[#f1c40f] tracking-wider uppercase flex items-center justify-center gap-1.5 animate-pulse">
+          🔥 OFERTA VÁLIDA DURANTE O PERÍODO JUNINO 🔥
+        </p>
       </div>
 
       <main id="main-content" className="flex-grow">
@@ -539,20 +531,17 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           
           <div className="text-center mb-14">
-            <span className="text-4xl sm:text-5xl mb-4 block select-none">🎁</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4.5xl font-black text-[#d35400] mb-4 tracking-tight font-display uppercase leading-tight max-w-4xl mx-auto">
+            <span className="text-3xl sm:text-4xl mb-3 block select-none">🎁</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-[#d35400] mb-4 tracking-tight font-display uppercase leading-tight max-w-3xl mx-auto">
               E ISSO NÃO É TUDO... AO ADQUIRIR O KIT ARRAIÁ PREMIUM, VOCÊ RECEBE 4 BÔNUS EXCLUSIVOS TOTALMENTE GRATUITOS.
             </h2>
-            <p className="text-[#5d4037] font-semibold md:text-lg max-w-2xl mx-auto mt-2">
-              Materiais extras que ajudam a deixar sua Festa Junina ainda mais divertida, organizada e memorável.
-            </p>
           </div>
 
           {/* 4 Bonuses Cards Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
             {/* Bonus 1 */}
-            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center">
+            <div className="bg-[#ebdcb9] rounded-3xl p-5 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center max-w-[250px] mx-auto w-full">
               <div>
                 <span className="inline-block bg-[#e74c3c] text-white text-xs font-extrabold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
                   💌 BÔNUS #1
@@ -564,14 +553,17 @@ export default function App() {
                   Mensagens divertidas e prontas para animar a interação entre os participantes da festa.
                 </p>
               </div>
-              <div className="mt-5 pt-3 border-t border-[#2d1e15]/10">
-                <p className="text-xs text-[#5d4037]/75 font-bold">Valor percebido:</p>
-                <p className="text-lg font-black text-[#e74c3c] font-display">R$ 19,90</p>
+              <div className="mt-4 pt-3 border-t border-[#2d1e15]/10">
+                <p className="text-sm font-black font-display text-[#e74c3c] flex items-center justify-center gap-1.5">
+                  <span className="line-through text-neutral-400 font-semibold">R$ 19,90</span>
+                  <span>→</span>
+                  <span className="text-emerald-600">R$ 0,00</span>
+                </p>
               </div>
             </div>
 
             {/* Bonus 2 */}
-            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center">
+            <div className="bg-[#ebdcb9] rounded-3xl p-5 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center max-w-[250px] mx-auto w-full">
               <div>
                 <span className="inline-block bg-[#e74c3c] text-white text-xs font-extrabold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
                   📸 BÔNUS #2
@@ -583,14 +575,17 @@ export default function App() {
                   Modelos criativos para fotos, decoração e momentos especiais durante o evento.
                 </p>
               </div>
-              <div className="mt-5 pt-3 border-t border-[#2d1e15]/10">
-                <p className="text-xs text-[#5d4037]/75 font-bold">Valor percebido:</p>
-                <p className="text-lg font-black text-[#e74c3c] font-display">R$ 14,90</p>
+              <div className="mt-4 pt-3 border-t border-[#2d1e15]/10">
+                <p className="text-sm font-black font-display text-[#e74c3c] flex items-center justify-center gap-1.5">
+                  <span className="line-through text-neutral-400 font-semibold">R$ 14,90</span>
+                  <span>→</span>
+                  <span className="text-emerald-600">R$ 0,00</span>
+                </p>
               </div>
             </div>
 
             {/* Bonus 3 */}
-            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center">
+            <div className="bg-[#ebdcb9] rounded-3xl p-5 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center max-w-[250px] mx-auto w-full">
               <div>
                 <span className="inline-block bg-[#e74c3c] text-white text-xs font-extrabold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
                   🎯 BÔNUS #3
@@ -602,14 +597,17 @@ export default function App() {
                   Uma das atrações mais tradicionais das Festas Juninas, pronta para utilizar.
                 </p>
               </div>
-              <div className="mt-5 pt-3 border-t border-[#2d1e15]/10">
-                <p className="text-xs text-[#5d4037]/75 font-bold">Valor percebido:</p>
-                <p className="text-lg font-black text-[#e74c3c] font-display">R$ 24,90</p>
+              <div className="mt-4 pt-3 border-t border-[#2d1e15]/10">
+                <p className="text-sm font-black font-display text-[#e74c3c] flex items-center justify-center gap-1.5">
+                  <span className="line-through text-neutral-400 font-semibold">R$ 24,90</span>
+                  <span>→</span>
+                  <span className="text-emerald-600">R$ 0,00</span>
+                </p>
               </div>
             </div>
 
             {/* Bonus 4 */}
-            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center">
+            <div className="bg-[#ebdcb9] rounded-3xl p-5 border-2 border-[#2d1e15]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-center max-w-[250px] mx-auto w-full">
               <div>
                 <span className="inline-block bg-[#e74c3c] text-white text-xs font-extrabold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
                   🏆 BÔNUS #4
@@ -621,9 +619,12 @@ export default function App() {
                   Atividades extras para aumentar a participação e diversão dos convidados.
                 </p>
               </div>
-              <div className="mt-5 pt-3 border-t border-[#2d1e15]/10">
-                <p className="text-xs text-[#5d4037]/75 font-bold">Valor percebido:</p>
-                <p className="text-lg font-black text-[#e74c3c] font-display">R$ 19,90</p>
+              <div className="mt-4 pt-3 border-t border-[#2d1e15]/10">
+                <p className="text-sm font-black font-display text-[#e74c3c] flex items-center justify-center gap-1.5">
+                  <span className="line-through text-neutral-400 font-semibold">R$ 19,90</span>
+                  <span>→</span>
+                  <span className="text-emerald-600">R$ 0,00</span>
+                </p>
               </div>
             </div>
 
