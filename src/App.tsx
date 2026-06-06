@@ -319,97 +319,148 @@ export default function App() {
         </div>
       </section>
 
-      {/* 6. What they receive Section (Tudo o que você recebe) */}
+      {/* 6. Benefits & Features Section (Tudo o que você recebe) */}
       <section className="relative z-10 py-16 md:py-24 px-4 bg-gradient-to-b from-white to-[#e5d7af] border-t border-neutral-100">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-
-            <h2 className="text-3xl md:text-5xl font-black text-[#d35400] mb-4 tracking-tight font-display">
-              O que você recebe imediatamente após a compra?
+            <h2 className="text-3xl md:text-5xl font-black text-[#d35400] mb-4 tracking-tight font-display uppercase">
+              TUDO O QUE VOCÊ PRECISA PARA ORGANIZAR UMA FESTA JUNINA INESQUECÍVEL
             </h2>
             <p className="text-[#5d4037] font-semibold md:text-lg max-w-2xl mx-auto">
-              Muito mais do que meros planos comuns. Você recebe um método estruturado e carismático de gincanas caipiras focado em engajamento ativo, resgate da essência infantil e zero cansaço de preparação:
+              Economize horas de planejamento e tenha acesso imediato a materiais prontos para imprimir e utilizar.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             
-            {/* Box 1 */}
-            <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 border border-[#f1c40f]/45 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
-              <div className="w-11 h-11 rounded-full bg-[#f1c40f]/30 flex items-center justify-center text-2xl mb-3.5 font-display shadow-inner">
-                🐟
+            {/* Card 1 */}
+            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
+                🎯
               </div>
-              <h4 className="text-base sm:text-lg font-extrabold text-[#2d1e15] mb-1.5 font-display tracking-tight">
-                Jogo da Pescaria Caipira Completo
-              </h4>
+              <h3 className="text-sm sm:text-base font-black text-[#2d1e15] mb-2 font-display uppercase tracking-wider">
+                MAIS DE 70 BRINCADEIRAS PRONTAS
+              </h3>
               <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
-                Dezenas de peixinhos coloridos e ultra-carismáticos ilustrados, prontos para recortar, numerar e pontuar as tarefas.
+                Não perca tempo procurando ideias na internet.
               </p>
             </div>
 
-            {/* Box 2 */}
-            <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 border border-[#f1c40f]/45 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
-              <div className="w-11 h-11 rounded-full bg-[#f1c40f]/30 flex items-center justify-center text-2xl mb-3.5 font-display shadow-inner">
-                🎁
+            {/* Card 2 */}
+            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
+                🖨️
               </div>
-              <h4 className="text-base sm:text-lg font-extrabold text-[#2d1e15] mb-1.5 font-display tracking-tight">
-                Painel Premiado Gigante e Interativo
-              </h4>
+              <h3 className="text-sm sm:text-base font-black text-[#2d1e15] mb-2 font-display uppercase tracking-wider">
+                MATERIAL 100% PRONTO PARA IMPRIMIR
+              </h3>
               <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
-                Arte completa e passo a passo de como montar o painel que as crianças amam furar ou sortear prendas divertidas.
+                Baixe e utilize imediatamente.
               </p>
             </div>
 
-            {/* Box 3 */}
-            <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-5 border border-[#f1c40f]/45 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
-              <div className="w-11 h-11 rounded-full bg-[#f1c40f]/30 flex items-center justify-center text-2xl mb-3.5 font-display shadow-inner">
-                🧺
-              </div>
-              <h4 className="text-base sm:text-lg font-extrabold text-[#2d1e15] mb-1.5 font-display tracking-tight">
-                Molde Mini Cesta Caipira 3D Fofa
-              </h4>
-              <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
-                Molde planejado para impressão de mini cestas 3D ideais para decorar a mesa, porta-lembrancinhas ou doces caipiras.
-              </p>
-            </div>
-
-            {/* Box 4 */}
-            <div className="bg-gradient-to-br from-red-50/70 to-white rounded-2xl p-5 border border-red-200/40 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
-              <div className="w-11 h-11 bg-red-100 rounded-full flex items-center justify-center text-2xl mb-3.5 font-display shadow-inner">
-                🌽
-              </div>
-              <h4 className="text-base sm:text-lg font-extrabold text-[#2d1e15] mb-1.5 font-display tracking-tight">
-                Jogo Acerte o Milho & Argolas
-              </h4>
-              <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
-                Roteiros e cartazes ilustrados de pontuação e instruções dinâmicas de arremessos para engajar todas as idades na diversão.
-              </p>
-            </div>
-
-            {/* Box 5 */}
-            <div className="bg-gradient-to-br from-[#2ecc71]/10 to-white rounded-2xl p-5 border border-emerald-100 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
-              <div className="w-11 h-11 bg-emerald-100 rounded-full flex items-center justify-center text-2xl mb-3.5 font-display shadow-inner">
+            {/* Card 3 */}
+            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 🎉
               </div>
-              <h4 className="text-base sm:text-lg font-extrabold text-[#2d1e15] mb-1.5 font-display tracking-tight">
-                Bandeirinhas & Decoração Personalizada
-              </h4>
+              <h3 className="text-sm sm:text-base font-black text-[#2d1e15] mb-2 font-display uppercase tracking-wider">
+                FESTA MAIS DIVERTIDA E ORGANIZADA
+              </h3>
               <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
-                Bandeiras decorativas exclusivas desenhadas pela Isabela, tags para cupcakes, pipocas e plaquinhas lindas de barraquinhas.
+                Atividades que mantêm crianças e convidados engajados.
               </p>
             </div>
 
-            {/* Box 6 */}
-            <div className="bg-gradient-to-br from-blue-50/60 to-white rounded-2xl p-5 border border-blue-200/40 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
-              <div className="w-11 h-11 bg-[#e3f2fd] rounded-full flex items-center justify-center text-2xl mb-3.5 font-display shadow-inner">
-                📸
+            {/* Card 4 */}
+            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
+                ⏰
               </div>
-              <h4 className="text-base sm:text-lg font-extrabold text-[#2d1e15] mb-1.5 font-display tracking-tight">
-                Plaquinhas Divertidas para Fotos
-              </h4>
+              <h3 className="text-sm sm:text-base font-black text-[#2d1e15] mb-2 font-display uppercase tracking-wider">
+                ECONOMIZE HORAS DE PREPARAÇÃO
+              </h3>
               <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
-                Dezenas de plaquinhas com frases juninas mega criativas para garantir os cliques mais engajados nas redes sociais.
+                Tudo já está criado e organizado.
               </p>
+            </div>
+
+            {/* Card 5 */}
+            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
+                🎨
+              </div>
+              <h3 className="text-sm sm:text-base font-black text-[#2d1e15] mb-2 font-display uppercase tracking-wider">
+                DECORAÇÕES E PAINÉIS EXCLUSIVOS
+              </h3>
+              <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
+                Deixe sua festa mais bonita sem gastar muito.
+              </p>
+            </div>
+
+            {/* Card 6 */}
+            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
+                🏆
+              </div>
+              <h3 className="text-sm sm:text-base font-black text-[#2d1e15] mb-2 font-display uppercase tracking-wider">
+                BINGOS, GINCANAS E DINÂMICAS
+              </h3>
+              <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
+                Diversão garantida para todas as idades.
+              </p>
+            </div>
+
+            {/* Card 7 */}
+            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
+                💌
+              </div>
+              <h3 className="text-sm sm:text-base font-black text-[#2d1e15] mb-2 font-display uppercase tracking-wider">
+                CORREIO ELEGANTE INCLUSO
+              </h3>
+              <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
+                Um dos itens mais procurados em festas juninas.
+              </p>
+            </div>
+
+            {/* Card 8 */}
+            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
+                📱
+              </div>
+              <h3 className="text-sm sm:text-base font-black text-[#2d1e15] mb-2 font-display uppercase tracking-wider">
+                ACESSO IMEDIATO
+              </h3>
+              <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed font-semibold">
+                Receba o material logo após a confirmação do pagamento.
+              </p>
+            </div>
+
+          </div>
+
+          {/* Bottom Impact CTA section */}
+          <div className="mt-16 text-center max-w-2xl mx-auto px-4 flex flex-col items-center">
+            <p className="text-lg sm:text-xl md:text-2xl font-black text-[#e74c3c] font-display uppercase tracking-wide mb-6">
+              ✨ VOCÊ RECEBE TUDO ISSO POR MENOS DO QUE O PREÇO DE UM LANCHE.
+            </p>
+            <a 
+              href="#oferta" 
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E9B21C] to-[#d49f13] hover:from-[#d49f13] hover:to-[#b58509] text-neutral-950 text-lg sm:text-xl md:text-2xl font-black px-10 py-5 rounded-full shadow-2xl hover:scale-[1.03] transition-all duration-300 ring-4 ring-[#E9B21C]/40 font-display uppercase tracking-wide animate-pulse-cta"
+            >
+              QUERO RECEBER MEU KIT ARRAIÁ AGORA
+            </a>
+            
+            <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 mt-4 text-[#5d4037] text-xs sm:text-sm font-extrabold">
+              <span className="flex items-center gap-1.5">
+                <span>🔒</span> Compra Segura
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span>⚡</span> Acesso Imediato
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span>💳</span> Pagamento Único
+              </span>
             </div>
           </div>
         </div>
