@@ -149,11 +149,11 @@ export default function App() {
         {/* Primary Benefit-focused Headings block */}
         <div className="max-w-4xl mx-auto text-center mt-3">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#d35400] tracking-tight leading-[1.12] mb-5 font-display uppercase">
-            Sua festa <span className="text-[#1b4332] underline decoration-[#f1c40f] decoration-4">completa e super organizada</span> em poucos minutos, sem passar noites planejando!
+            Mais de 70 brincadeiras e atividades prontas para <span className="text-[#1b4332] underline decoration-[#f1c40f] decoration-4">transformar sua Festa Junina</span> sem perder horas procurando ideias
           </h1>
           
           <p className="text-sm sm:text-base md:text-lg text-[#5d4037] max-w-3xl mx-auto leading-relaxed mb-8 font-semibold">
-            Tenha em mãos a <strong className="text-[#2d1e15]">experiência completa de brincadeiras de alto engajamento, dinâmicas ativas e decorações acolhedoras</strong> <span className="text-[#1e3a8a] font-black">+BONUS</span>.
+            Baixe agora, imprima e comece a usar hoje mesmo. Tudo organizado, divertido e pronto para encantar crianças, alunos, convidados e toda a família.
           </p>
         </div>
 
