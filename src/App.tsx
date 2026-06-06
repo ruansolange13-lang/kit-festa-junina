@@ -120,6 +120,21 @@ export default function App() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#e5d7af] text-[#2d1e15] font-sans antialiased selection:bg-[#f1c40f]/50 flex flex-col">
       
+      {/* Top Special Offer Banner */}
+      <div className="w-full bg-gradient-to-r from-[#2d1e15] via-[#d35400] to-[#2d1e15] text-white py-3.5 px-4 text-center border-b border-[#f1c40f]/30 z-50 relative shadow-md select-none">
+        <div className="max-w-4xl mx-auto flex flex-col gap-1">
+          <p className="font-extrabold text-sm sm:text-base text-[#f1c40f] tracking-wider uppercase flex items-center justify-center gap-1.5">
+            🔥 OFERTA ESPECIAL DE FESTA JUNINA 🔥
+          </p>
+          <p className="font-black text-xs sm:text-sm text-white leading-snug">
+            Garanta agora seu acesso e receba todos os materiais imediatamente.
+          </p>
+          <p className="text-[10px] sm:text-xs text-amber-200/90 font-bold uppercase tracking-wider mt-0.5">
+            ⚠️ Essa condição promocional pode sair do ar a qualquer momento durante o período junino.
+          </p>
+        </div>
+      </div>
+
       <main id="main-content" className="flex-grow">
       
       {/* 2. Hero Section (Landing Hook with Flags) */}

@@ -85,7 +85,7 @@ export default function PlanCard({ plan, onBasicClick }: PlanCardProps) {
       </a>
       
       <p className="mt-3 text-xs text-[#5d4037] font-semibold">
-        ⚡ Acesso imediato no e-mail • 🛡️ Compra segura
+        ⚡ Acesso imediato após a confirmação do pagamento.
       </p>
 
       {/* Features Divider */}
