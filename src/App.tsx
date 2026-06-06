@@ -164,11 +164,11 @@ export default function App() {
         {/* Primary Benefit-focused Headings block */}
         <div className="max-w-4xl mx-auto text-center mt-3">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#d35400] tracking-tight leading-[1.12] mb-5 font-display uppercase">
-            Mais de 70 brincadeiras e atividades prontas para <span className="text-[#1b4332] underline decoration-[#f1c40f] decoration-4">transformar sua Festa Junina</span> sem perder horas procurando ideias
+            Sua Festa Junina <span className="text-[#1b4332] underline decoration-[#f1c40f] decoration-4">completa e super organizada</span> em poucos minutos
           </h1>
           
           <p className="text-sm sm:text-base md:text-lg text-[#5d4037] max-w-3xl mx-auto leading-relaxed mb-8 font-semibold">
-            Baixe agora, imprima e comece a usar hoje mesmo. Tudo organizado, divertido e pronto para encantar crianças, alunos, convidados e toda a família.
+            Receba um kit completo com tudo pronto para baixar, imprimir e utilizar hoje mesmo <span className="text-[#1e3a8a] font-black">+BONUS</span>
           </p>
         </div>
 
@@ -243,7 +243,7 @@ export default function App() {
       <section className="relative z-10 py-16 md:py-20 px-4 bg-white border-y border-amber-100">
         <div className="max-w-3xl mx-auto space-y-8">
           
-          <div className="bg-[#fffdfa] border-2 border-[#e67e22] rounded-[2rem] p-6 sm:p-8 md:p-10 text-center shadow-sm">
+          <div className="bg-[#ebdcb9] border-2 border-[#e67e22] rounded-[2rem] p-6 sm:p-8 md:p-10 text-center shadow-sm">
             <h2 className="text-2xl sm:text-3xl md:text-3.5xl font-black text-[#2d1e15] mb-4 tracking-tight font-display leading-tight">
               Você também sofre com a correria do São João?
             </h2>
@@ -252,12 +252,21 @@ export default function App() {
             </p>
           </div>
 
-          <div className="bg-[#fffdfa] border-2 border-[#e67e22] rounded-[2rem] p-6 sm:p-8 md:p-10 text-center shadow-sm">
+          <div className="bg-[#ebdcb9] border-2 border-[#e67e22] rounded-[2rem] p-6 sm:p-8 md:p-10 text-center shadow-sm">
             <p className="text-[#e67e22] text-lg sm:text-xl font-black mb-4 font-display uppercase tracking-wide">
               🚫 Chega de estressar sua semana de São João!
             </p>
             <p className="text-[#5d4037] text-sm sm:text-base font-bold leading-relaxed max-w-2xl mx-auto">
               Nós já fizemos todo o planejamento, a pesquisa pedagógica e a criação das brincadeiras. Agora você só precisa aplicar e aproveitar um arraiá organizado, divertido e sem dor de cabeça.
+            </p>
+          </div>
+
+          <div className="bg-[#ebdcb9] border-2 border-[#e67e22] rounded-[2rem] p-6 sm:p-8 md:p-10 text-center shadow-sm">
+            <p className="text-[#e67e22] text-lg sm:text-xl font-black mb-4 font-display uppercase tracking-wide">
+              ❌ Cansado de improvisar brincadeiras sem graça na última hora?
+            </p>
+            <p className="text-[#5d4037] text-sm sm:text-base font-bold leading-relaxed max-w-2xl mx-auto">
+              Improvisar na véspera gera estresse e correria para comprar materiais de última hora, resultando em gincanas confusas que dispersam a atenção das crianças e frustram os convidados.
             </p>
           </div>
         </div>
@@ -334,7 +343,7 @@ export default function App() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             
             {/* Card 1 */}
-            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 🎯
               </div>
@@ -347,7 +356,7 @@ export default function App() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 🖨️
               </div>
@@ -360,7 +369,7 @@ export default function App() {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 🎉
               </div>
@@ -373,7 +382,7 @@ export default function App() {
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 ⏰
               </div>
@@ -386,7 +395,7 @@ export default function App() {
             </div>
 
             {/* Card 5 */}
-            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 🎨
               </div>
@@ -399,7 +408,7 @@ export default function App() {
             </div>
 
             {/* Card 6 */}
-            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 🏆
               </div>
@@ -412,7 +421,7 @@ export default function App() {
             </div>
 
             {/* Card 7 */}
-            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 💌
               </div>
@@ -425,7 +434,7 @@ export default function App() {
             </div>
 
             {/* Card 8 */}
-            <div className="bg-white rounded-3xl p-6 border-2 border-neutral-100 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
+            <div className="bg-[#ebdcb9] rounded-3xl p-6 border-2 border-[#2d1e15]/10 hover:border-[#f1c40f]/60 hover:shadow-[0_20px_40px_-15px_rgba(230,126,34,0.15)] transition-all duration-300 flex flex-col items-center text-center group">
               <div className="w-14 h-14 rounded-2xl bg-amber-50 group-hover:bg-[#f1c40f]/20 transition-colors duration-300 flex items-center justify-center text-3xl mb-4 shadow-inner select-none">
                 📱
               </div>
