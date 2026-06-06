@@ -196,8 +196,8 @@ export default function App() {
 
         {/* Optimized Video Block (VSL vertical story style) */}
         <div className="max-w-[360px] mx-auto mt-6 px-4 sm:px-0">
-          <p className="text-center text-[#5d4037] text-xs sm:text-sm font-black uppercase tracking-wider mb-2">
-            CONFIRA O SEU KIT JUNINO COMPLETO:
+          <p className="text-center text-[#5d4037] text-sm sm:text-base font-black uppercase tracking-wider mb-2">
+            ASSISTA AO VÍDEO ABAIXO:
           </p>
           <VSLPlayer />
         </div>
@@ -771,7 +771,7 @@ export default function App() {
                 onClick={handleBasicClick}
                 className="inline-flex items-center justify-center gap-2 w-full font-black text-base sm:text-lg px-6 py-4.5 rounded-full shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer font-display uppercase tracking-wide bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-[0_10px_25px_-5px_rgba(230,126,34,0.3)]"
               >
-                QUERO O PLANO ESSENCIAL
+                ADQUIRIR ESSA OFERTA
               </a>
               <p className="mt-3 text-[11px] text-[#5d4037] font-bold">
                 ⚡ Acesso imediato após a confirmação do pagamento.
@@ -853,7 +853,7 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full font-black text-base sm:text-lg px-6 py-4.5 rounded-full shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer font-display uppercase tracking-wide bg-gradient-to-r from-[#E9B21C] to-[#d49f13] text-neutral-950 hover:from-[#d49f13] hover:to-[#b58509] shadow-[0_15px_35px_-5px_rgba(233,178,28,0.5)] ring-4 ring-[#E9B21C]/40 animate-pulse-cta"
               >
-                QUERO O KIT ARRAIÁ PREMIUM
+                ADQUIRIR ESSA OFERTA
               </a>
               <p className="mt-3 text-[11px] text-[#5d4037] font-bold">
                 ⚡ Acesso imediato após a confirmação do pagamento.
