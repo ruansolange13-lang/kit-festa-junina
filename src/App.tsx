@@ -630,14 +630,78 @@ export default function App() {
 
           </div>
 
-          {/* Highlight Block */}
-          <div className="mt-12 bg-gradient-to-br from-[#2d1e15] via-[#d35400] to-[#2d1e15] text-white rounded-[2rem] p-6 sm:p-8 text-center border-4 border-[#f1c40f] max-w-4xl mx-auto shadow-2xl animate-pulse-cta">
-            <h4 className="text-xl sm:text-2xl font-black text-[#f1c40f] mb-2 font-display uppercase tracking-wide">
-              🔥 VALOR TOTAL DOS BÔNUS: R$ 79,60
-            </h4>
-            <p className="text-sm sm:text-base font-black text-white uppercase tracking-wider">
-              HOJE VOCÊ RECEBE TUDO ISSO SEM PAGAR NADA A MAIS NO PLANO PREMIUM.
+          {/* Premium Minimalist Bonuses Highlight Card (Hotmart/Kiwify Style) */}
+          <div className="mt-12 bg-[#fffdfa] rounded-[1.5rem] p-8 sm:p-10 border-2 border-[#f1c40f]/40 max-w-2xl mx-auto shadow-md text-[#2d1e15]">
+            
+            {/* Top Badge */}
+            <div className="flex justify-center mb-4 select-none">
+              <span className="inline-flex items-center gap-1 bg-[#f1c40f]/20 text-[#d35400] text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                🎁 BÔNUS EXCLUSIVOS
+              </span>
+            </div>
+
+            {/* Title & Subtitle */}
+            <div className="text-center mb-8">
+              <h3 className="text-xl sm:text-2xl font-black text-[#2d1e15] font-display uppercase tracking-tight leading-snug mb-3">
+                VOCÊ RECEBE MAIS R$ 79,60 EM MATERIAIS EXTRAS
+              </h3>
+              <p className="text-sm text-[#5d4037] font-semibold leading-relaxed max-w-lg mx-auto">
+                Além de todo o conteúdo principal, o Plano Premium inclui materiais adicionais que deixam sua Festa Junina ainda mais completa.
+              </p>
+            </div>
+
+            {/* Visual Checklist */}
+            <ul className="max-w-md mx-auto space-y-3 mb-8 text-sm sm:text-base text-[#2d1e15] font-bold">
+              <li className="flex items-center gap-3">
+                <span className="text-emerald-500 font-extrabold text-lg">✓</span>
+                <span>Kit Correio Elegante Premium</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-emerald-500 font-extrabold text-lg">✓</span>
+                <span>Kit Plaquinhas e Cartazes Juninos</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-emerald-500 font-extrabold text-lg">✓</span>
+                <span>Kit Bingo Junino Completo</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-emerald-500 font-extrabold text-lg">✓</span>
+                <span>Kit Desafios e Gincanas Juninas</span>
+              </li>
+            </ul>
+
+            {/* Elegant Divider */}
+            <div className="border-t border-[#f1c40f]/20 my-6"></div>
+
+            {/* Pricing Comparison Block */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 text-center mb-4 select-none">
+              <div>
+                <p className="text-xs text-[#5d4037]/75 font-extrabold uppercase tracking-wider mb-1">
+                  VALOR DOS BÔNUS
+                </p>
+                <div className="flex items-center gap-3">
+                  <span className="text-sm text-neutral-400 line-through font-semibold">
+                    De R$ 79,60
+                  </span>
+                  <span className="text-xl sm:text-2xl font-black text-emerald-600 font-display">
+                    Por R$ 0,00
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Small Text */}
+            <p className="text-center text-xs text-[#5d4037] font-semibold mb-6">
+              Todos os bônus já estão incluídos gratuitamente no Plano Premium.
             </p>
+
+            {/* Footer Alert */}
+            <div className="text-center pt-4 border-t border-[#f1c40f]/10">
+              <p className="text-xs sm:text-sm text-[#e74c3c] font-black uppercase tracking-wider">
+                🔥 Oferta especial disponível apenas para quem escolher o Plano Premium.
+              </p>
+            </div>
+
           </div>
 
         </div>
